@@ -1,0 +1,70 @@
+name: "🐞 Bug report / Ошибка / Bogue / Fehler / Errore"
+description: "Something does not work as expected."
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you! You can write in English, Русский, Français, Deutsch or Italiano.
+        Please do not post personal data (e-mail, real name, photos of faces).
+  - type: input
+    id: version
+    attributes:
+      label: "Program version"
+      description: "Shown in the PC program (Help menu or window title)."
+      placeholder: "1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Which part?"
+      options:
+        - "Installation"
+        - "iPhone connection"
+        - "Head tracking"
+        - "Voice commands"
+        - "Instructor"
+        - "Other"
+    validations:
+      required: true
+  - type: dropdown
+    id: simulator
+    attributes:
+      label: "Simulator"
+      options:
+        - "IL-2 Sturmovik: Great Battles"
+        - "Microsoft Flight Simulator 2024"
+        - "Microsoft Flight Simulator 2020"
+        - "X-Plane 12"
+        - "Other / none"
+  - type: dropdown
+    id: connection
+    attributes:
+      label: "Connection"
+      options:
+        - "Cable"
+        - "Wi-Fi"
+        - "Both / not sure"
+  - type: input
+    id: devices
+    attributes:
+      label: "iPhone model and iOS version · Windows version"
+      placeholder: "iPhone 13, iOS 26 · Windows 11"
+  - type: textarea
+    id: what
+    attributes:
+      label: "What happened?"
+      description: "What did you do, what did you expect, what happened instead?"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce"
+      placeholder: "1. …\n2. …\n3. …"
+  - type: textarea
+    id: report
+    attributes:
+      label: "Report archive (optional)"
+      description: "Service → Report for the developer… → Save the archive. Drag the file here."

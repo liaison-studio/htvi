@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Website — FAQ"
+    url: "https://liaison-studio.github.io/head-tracker+voice+instructor/en/faq/"
+    about: "Short answers to common questions."
+  - name: "E-mail"
+    url: "mailto:liaison.studio.contact@gmail.com"
+    about: "For anything you prefer not to post publicly."

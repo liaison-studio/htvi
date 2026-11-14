@@ -1,0 +1,19 @@
+name: "❓ Question / Вопрос / Question / Frage / Domanda"
+description: "Ask how to do something."
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before asking, have a look at the FAQ (docs/faq.en.md) and Troubleshooting (docs/troubleshooting.en.md).
+        You can write in English, Русский, Français, Deutsch or Italiano.
+  - type: textarea
+    id: question
+    attributes:
+      label: "Your question"
+    validations:
+      required: true
+  - type: input
+    id: context
+    attributes:
+      label: "Simulator, iPhone model, Windows version (if relevant)"

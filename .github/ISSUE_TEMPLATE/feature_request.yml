@@ -1,0 +1,21 @@
+name: "💡 Feature request / Пожелание / Suggestion / Wunsch / Proposta"
+description: "Suggest an idea: a simulator, an aircraft, a voice command, an instructor procedure…"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: "You can write in English, Русский, Français, Deutsch or Italiano."
+  - type: textarea
+    id: idea
+    attributes:
+      label: "What would you like?"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: "Why? In which situation would it help you?"
+  - type: input
+    id: sim
+    attributes:
+      label: "Simulator / aircraft (if relevant)"
